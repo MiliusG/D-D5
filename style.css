@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+body {
+    background-image: linear-gradient(
+        70deg
+        , rgb(0 0 0 / 40%) 30%, rgb(0 0 0 / 37%) 65%), url(images/fond.jpg);
+}
+h1 {
+    color: red;
+    margin: 0px;
+    padding-top: 55px;
+}
+.btn-red {
+    color: white;
+    text-decoration: none;
+    background-color: red ;
+    padding: 16px;
+    border-radius: 7px;
+    font-family: 'Arial', sans-serif;
+    display: block;
+    width: 20%;
+    margin: 16px auto;
+    opacity: 1;
+    font-family: 'Dela Gothic One', cursive;
+}
+.btn-red:hover {
+    color: red;
+    background-color: black;
+    transition: 500ms;
+}
+.banner {
+    background-image: linear-gradient(
+89deg
+, rgb(0 0 0 / 51%) 38%, rgb(0 0 0 / 42%) 84%), url(images/banner.jpg);
+    height: 57vh;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    
+}
+.card {
+    background-image: url(images/parchemin.jpg);
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #00000066;
+    position: relative;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+img {
+    height: 150px;
+    border-radius: 7px;
+}
+.title {
+    color:white;
+}
+p {
+color: rgb(136, 26, 26);
+}
+.overlay {
+    width: 240px;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0.80   ; 
+    background-color: grey;
+    margin:auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: inherit;
+    visibility: hidden;
+    min-height: 100%;
+    z-index: 100;
+    position: absolute;
+}
+.card:hover .overlay { 
+    visibility: visible;
+}
+.overlay .btn-red {
+    color: darkred;
+    text-decoration: none;
+    background-color:black;
+    border-radius: 7px;
+    font-family: 'Arial', sans-serif;
+    top: 40%;
+    width: fit-content;
+    position: relative;
+    z-index: 105;
+    opacity: 1;
+    font-family: 'Dela Gothic One', cursive;
+}
+p {
+    font-family: 'Tangerine', cursive;
+    font-size: 20px;
+}
+h1 , h2 , h3 {
+    font-family: 'Cinzel', serif;
+}
